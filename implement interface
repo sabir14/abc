@@ -1,0 +1,44 @@
+interface in1
+{
+	
+	void calculate(int x,int y);
+	void fact(int x);
+	
+}
+class sal implements in1
+{
+	sal()
+	{
+		System.out.println("ok");
+	}
+	void disp()
+	{
+		
+	System.out.println("DISPLAY WITHOUT PATTERN");
+	}
+	public void calculate(int x,int y)
+	{
+		System.out.println("ADDITUON-"+(x+y));
+		System.out.println("subtraction-"+(x-y));
+	}
+	public void fact(int x)
+	{
+		int fact1=1;
+		for(int z=1;z<=x;z++)
+		{
+			fact1=fact1*z;
+		}
+		System.out.println(fact1);
+	}
+	public static void main (String s1[])
+	{
+	sal e = new sal();
+	e.disp();
+	e.calculate(5,5);
+	e.fact(5);
+	
+	
+	}
+}
+
+	
